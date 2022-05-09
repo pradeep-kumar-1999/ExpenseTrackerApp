@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <h1 class="heading">Expense Tracker Application</h1>
+    <div class="container">
+        <h3>your balance</h3>
+        <h3 id="balance">Rs. 5000</h3>
+    </div>
+    <div class="inc-exp-container">
+        <div id="income-box">
+            <h3>Income</h3>
+            <h3 id="balance-add" class="money">Rs.500</h3>
+        </div>
+        <div id="expense-box">
+            <h3>Expenditure</h2>
+                <h3 id="balance-minus" class="money">Rs.200</h3>
+        </div>
+    </div>
+
+    <h3>History</h3>
+    <ul id="list" class="list">
+        <li class="minus">
+            Cash <span>-Rs.400</span><button class="delete-btn">x</button>
+        </li>
+    </ul>
+    <div class="add-new-container">
+        <h1 class="heading">Add new transaction</h1>
+        <form id="form">
+
+            <input type="text" name="text" id="new-transaction-type" placeholder="enter the transaction type"><br>
+            <input type="number" name="number" id="new-transaction-amount" placeholder="  Rs. enter transaction amount"><br>
+
+            <button class="btn">add transaction</button>
+        </form>
+    </div>
+
+    <script src="init.js"></script>
+
+
+
+</body>
+
+</html>
